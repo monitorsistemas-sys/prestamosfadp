@@ -698,16 +698,13 @@ function PantallaAcceso({ onAcceder }) {
       alignItems: "center", justifyContent: "center",
       padding: "24px 16px",
     }}>
-      {/* Logo sobre la card */}
-      <LogoFADP size={88} />
-
       {/* Card login */}
       <div style={{
         background: C.bgCard,
         borderRadius: 18,
         padding: "32px 28px 24px",
         width: "100%", maxWidth: 400,
-        marginTop: 20,
+        marginTop: 0,
         boxShadow: C.bg === "#F2F2F2"
           ? "0 8px 32px rgba(0,0,0,0.12)"
           : "0 8px 40px rgba(0,0,0,0.5)",
