@@ -659,6 +659,22 @@ function PantallaAcceso({ onAcceder }) {
       alignItems: "center", justifyContent: "center",
       padding: "24px 16px",
     }}>
+       {/* Logo encima de la card */}
+      <div style={{
+        width: 90, height: 90,
+        borderRadius: 20,
+        background: "#FFFFFF",
+        display: "flex", alignItems: "center", justifyContent: "center",
+        marginBottom: 20,
+        boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+        padding: 8,
+      }}>
+        <img
+          src="/favicon.png"
+          alt="FADP"
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+        />
+      </div>
       {/* Card login */}
       <div style={{
         background: C.bgCard,
