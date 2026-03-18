@@ -974,6 +974,7 @@ function PantallaConfirmacion({ resultado, correoEstudiante, onNueva }) {
           color:C.textSecondary, borderRadius:13, padding:"13px 26px",
           fontSize:14, cursor:"pointer", fontFamily:"inherit", fontWeight:"600",
         }}>{t.newReq}</button>
+      </div>
     </div>
   );
 }
