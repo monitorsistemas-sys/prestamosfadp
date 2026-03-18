@@ -195,20 +195,6 @@ function useC() {
   };
 }
 
-// ─── Logo FADP embebido en base64 ────────────────────────────────────────────
-const LOGO_B64 = "data:image/png;base64,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";
-function LogoFADP({ size = 56 }) {
-  return (
-    <img
-      src={LOGO_B64}
-      alt="FADP"
-      width={size}
-      height={size}
-      style={{ objectFit: "contain", display: "block" }}
-    />
-  );
-}
-
 // ─── Barra de controles (tema + idioma) ──────────────────────────────────────
 function ControlBar({ dark, setDark, lang, setLang }) {
   const C = useC();
@@ -239,31 +225,6 @@ function ControlBar({ dark, setDark, lang, setLang }) {
       }}>
         {dark ? "☀️" : "🌙"}
       </button>
-    </div>
-  );
-}
-
-// ─── Header institucional ─────────────────────────────────────────────────────
-function HeaderFADP({ sub }) {
-  const C = useC();
-  return (
-    <div style={{
-      display: "flex", flexDirection: "column",
-      alignItems: "center", padding: "20px 24px 16px",
-      background: C.headerBg, borderBottom: `1px solid ${C.headerBorder}`,
-    }}>
-      <LogoFADP size={72} />
-      <h1 style={{
-        color: "#D32F2F", fontSize: 13, fontWeight: "800",
-        letterSpacing: "0.1em", textTransform: "uppercase",
-        margin: "10px 0 3px", textAlign: "center", lineHeight: 1.4,
-      }}>
-        Fundación Academia<br />de Dibujo Profesional
-      </h1>
-      <p style={{
-        color: C.textSecondary, fontSize: 11, margin: 0,
-        letterSpacing: "0.08em", textTransform: "uppercase",
-      }}>{sub}</p>
     </div>
   );
 }
@@ -858,7 +819,6 @@ function PantallaFormulario({ correoEstudiante, onExito }) {
 
       {/* Header sticky */}
       <div style={{ background:C.headerBg, padding:"14px 18px", position:"sticky", top:0, zIndex:10, borderBottom:`1px solid ${C.headerBorder}`, display:"flex", alignItems:"center", gap:12 }}>
-        <LogoFADP size={30} />
         <div>
           <h1 style={{ color:C.textPrimary, fontSize:14, fontWeight:"700", margin:0 }}>{t.newRequest}</h1>
           <p style={{ color:C.textMuted, fontSize:11, margin:0 }}>{correoEstudiante}</p>
@@ -974,9 +934,8 @@ function PantallaConfirmacion({ resultado, correoEstudiante, onNueva }) {
   const C = useC();
   const t = useLang();
   return (
-    <div style={{ minHeight:"100vh", background:C.bg, display:"flex", flexDirection:"column" }}>
-      <HeaderFADP sub={t.appSubtitle} />
-      <div style={{ flex:1, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"32px 24px" }}>
+    <div style={{ minHeight:"100vh", background:C.bg, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"32px 24px" }}>
+      <div>
 
         <div style={{
           width:90, height:90, borderRadius:"50%",
@@ -1015,7 +974,6 @@ function PantallaConfirmacion({ resultado, correoEstudiante, onNueva }) {
           color:C.textSecondary, borderRadius:13, padding:"13px 26px",
           fontSize:14, cursor:"pointer", fontFamily:"inherit", fontWeight:"600",
         }}>{t.newReq}</button>
-      </div>
     </div>
   );
 }
